@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo-removebg-preview (1).png" alt="logo">
+                        Hight Spirits Cleaning
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+                <div class="sm-nav">
+                <li><a target="_blank" href="https://wa.me/+971509246913"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/hight_spirit_cleaning_company?igsh=NGJ2dDJ0MjJuaXF6"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100063655804791&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></li>
+                </div>        
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="drop-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact-us">Contact us</a></li>
+        </div>
+
+        <main>
+            <section class="home-sec">
+                <h1>Welcome To Hight Spirit Cleaning</h1>
+                <div class="home-text">
+                <p>
+                    Hight Spirit Cleaning Services 
+                    prioritizes the well-being of spaces, 
+                    ensuring fresh air and a healthy 
+                    lifestyle, with a focus on providing 
+                    professional services exclusively 
+                    within Dubai.
+                    
+                </p>
+                </div>
+                <A target="_blank" href="https://wa.me/+971509246913" class="home-btn">Book Now</A>
+            </section>
+        </main>
+    </header>
+
+
+
+
+<!-- About Us Section -->
+    <section id="about-us" class="about-us-section">
+    <div class="container">
+    <!-- Image -->
+        <div class="about-image">
+        <img src="images/about.jpg" alt="High Spirits Cleaning">
+        </div>
+
+    <div class="about-text">
+        <h2>About Us</h2>
+        <p>Hight Spirits Cleaning offers top-notch cleaning services that cater to both residential and commercial spaces. We are committed to providing the highest level of cleanliness while being mindful of the environment. Our services are designed to leave your space spotless, sanitized, and welcoming.</p>
+        <p>We specialize in deep cleaning using eco-friendly products and advanced cleaning techniques. Whether it’s a home, villa, or office, our team ensures every corner is thoroughly cleaned, with an emphasis on hard-to-reach areas. Our steam cleaning service removes even the toughest stains, while our non-steaming option provides reliable results for general cleaning needs.</p>
+        <ul>
+        <li><strong>Deep Cleaning:</strong>            <span class="blk-text"> Floors, walls, and furniture cleaned with advanced scrubbing techniques.</li></span>
+        <li><strong>Steaming Services:</strong>        <span class="blk-text">  Perfect for grease, mold, and tough stains.</li></span>
+        <li><strong>Eco-Friendly Solutions:</strong>   <span class="blk-text"> We use non-toxic products that are safe for your family and pets.</li></span>
+        </ul>
+        <a href="#services">Check Our Services</a>
+    </div>
+    </div>
+    </section>
+
+
+        <!-- SERVICES SECTION BEGIN -->
+
+   <section id="services">
+    <div class="services-container">
+        <h2>Our Services</h2>
+        <p>Explore our expert cleaning solutions across a variety of categories.</p>
+
+        <!-- Category Cards -->
+        <div class="categories">
+            <div class="service-card" onclick="toggleDescription('outdoor')">
+                <h3>Outdoor Deep Cleaning</h3>
+            </div>
+            <div class="service-card" onclick="toggleDescription('upholstery')">
+                <h3>Upholstery Deep Cleaning / Soft Furnishings</h3>
+            </div>
+            <div class="service-card" onclick="toggleDescription('deepCleaning')">
+                <h3>Deep Cleaning - Villa / Apartment / Office</h3>
+            </div>
+            <div class="service-card" onclick="toggleDescription('maidService')">
+                <h3>Maid Service</h3>
+            </div>
+            <div class="service-card" onclick="toggleDescription('floors')">
+                <h3>Floors Deep Cleaning</h3>
+            </div>
+        </div>
+
+        <!-- Hidden Content for Outdoor Deep Cleaning -->
+        <div id="outdoor" class="service-description">
+            <h4>Outdoor Deep Cleaning</h4>
+            <div class="service-items">
+                <div class="service-item">
+                    <img src="images/person-disinfecting-wooden-surface.jpg" alt="Outdoor Furniture">
+                    <p>Outdoor Furniture</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/top-view-rake-grass.jpg" alt="AstroTurf Deep Cleaning">
+                    <p>AstroTurf Deep Cleaning</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/close-up-floor-wiper-mop-cleaning-industrial-plant.jpg" alt="Pavement / Terrace / Façade">
+                    <p>Pavement / Terrace / Façade</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/woman-with-rubber-glove-wiping-window.jpg" alt="Windows Interior & Exterior">
+                    <p>Windows Interior & Exterior</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/man-preparing-barbeque-cooking.jpg" alt="BBQ Deep Cleaning Steaming">
+                    <p>BBQ Deep Cleaning Steaming</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/medium-shot-man-disinfecting-wall.jpg" alt="External Walls">
+                    <p>External Walls</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/three-miniature-recycle-bins.jpg" alt="Disposal Bins Deep Cleaning Sanitizing">
+                    <p>Disposal Bins Deep Cleaning Sanitizing</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/man-worker-firld-by-solar-panels.jpg" alt="Roof Top Deep Cleaning">
+                    <p>Roof Top Deep Cleaning</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Content for Upholstery Deep Cleaning -->
+        <div id="upholstery" class="service-description">
+            <h4>Upholstery Deep Cleaning / Soft Furnishings</h4>
+            <div class="service-items">
+                <div class="service-item">
+                    <img src="images/man-doing-professional-home-cleaning-service.jpg" alt="Sofa Deep Cleaning">
+                    <p>Sofa Deep Cleaning</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/woman-with-rubber-gloves-cleaning.jpg" alt="Mattress Deep Cleaning">
+                    <p>Mattress Deep Cleaning</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/chambermaid-cleaning-hotel-room.jpg" alt="Curtains Deep Cleaning">
+                    <p>Curtains Deep Cleaning</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/front-view-woman-cleaning-chair.jpg" alt="Chairs Deep Cleaning">
+                    <p>Chairs Deep Cleaning</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/cute-baby-with-pacifier-lying-baby-carriage-home.jpg" alt="Infant Stroller / Pram Deep Cleaning">
+                    <p>Infant Stroller / Pram Deep Cleaning</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/young-family-enjoying-their-trip.jpg" alt="Child Carseat Deep Cleaning">
+                    <p>Child Carseat Deep Cleaning</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/vacuum-cleaning-rug-floor.jpg" alt="Rugs / Carpets Deep Cleaning">
+                    <p>Rugs / Carpets Deep Cleaning</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/close-up-car-care-process.jpg" alt="Vehicle Detailing / Interior Deep Cleaning">
+                    <p>Vehicle Detailing / Interior Deep Cleaning</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Content for Deep Cleaning - Villa / Apartment / Office -->
+        <div id="deepCleaning" class="service-description">
+            <h4>Deep Cleaning - Villa / Apartment / Office</h4>
+            <div class="service-items">
+                <div class="service-item">
+                    <img src="images/crop-woman-packing-boxes.jpg" alt="Deep Cleaning Prior to Moving In">
+                    <p>Deep Cleaning Prior to Moving In</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/no-people-living-room-interior-move-with-carton-boxes-empty-real-estate-property-full-cardboard-packing-storage-cargo-nobody-apartment-relocation-moving-day.jpg" alt="Deep Cleaning Move Out">
+                    <p>Deep Cleaning Move Out</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/professional-cleaning-service-person-using-vacuum-cleaner-office-min.jpg" alt="Deep Cleaning Furnished Properties">
+                    <p>Deep Cleaning Furnished Properties</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Content for Maid Service -->
+        <div id="maidService" class="service-description">
+            <h4>Maid Service</h4>
+            <div class="service-items">
+                <div class="service-item">
+                    <img src="images/chambermaid-cleaning-hotel-room (1).jpg" alt="Maid Service On Call / Ad-hoc">
+                    <p>Maid Service On Call / Ad-hoc</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/chambermaid-cleaning-hotel-room.jpg" alt="Maid Service Weekly / Monthly Packages">
+                    <p>Maid Service Weekly / Monthly Packages</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Content for Floors Deep Cleaning -->
+        <div id="floors" class="service-description">
+            <h4>Floors Deep Cleaning</h4>
+            <div class="service-items">
+                <div class="service-item">
+                    <img src="images/man-cleaning-floor.jpg" alt="Grout Deep Cleaning">
+                    <p>Grout Deep Cleaning</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/view-arrangement-with-cleaning-products-marble-table.jpg" alt="Marble Polishing">
+                    <p>Marble Polishing</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/young-latin-man-cleaning-home.jpg" alt="Marble Crystallising">
+                    <p>Marble Crystallising</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/person-using-disinfection-solution.jpg" alt="Glue Removal">
+                    <p>Glue Removal</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/person-taking-care-office-cleaning.jpg" alt="Parquet Polishing">
+                    <p>Parquet Polishing</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    
+        <!-- CONTACT US SECTION BEGIN -->
+
+    <section class="contact" id="contact-us">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>We'll get back as soon as possible</p>
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>JVC. Prime Business Center, Dubai , UAE</p>
+                    </div>
+                </div>
+
+                <a  href="tel:+971 50 924 6913">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>                       
+                            <p>
+                                +971 50 924 6913
+                            </p>
+                    </div>
+                </div>
+                </a>
+
+
+                <a target="_blank" href="mailto:info@hightspiritcsc.com">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+
+                            <p>
+                                info@hightspiritcsc.com
+                            </p>
+                        
+                    </div>
+                </div>
+                </a>
+
+
+
+                <h2 class="txt">
+                    Connect with us
+                </h2>
+                <ul class="sci">
+                    <li><a target="_blank" href="https://wa.me/+971509246913"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100063655804791&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/hight_spirit_cleaning_company?igsh=NGJ2dDJ0MjJuaXF6"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+
+                    <input type="hidden" name="access_key" value="64e73f53-4570-4969-9997-29cc1a78c606">
+
+                    <h2>Send a Message</h2>
+
+                    <div class="inputBox">
+                        <input type="text" name="f-name" id="F-name" required="required">
+                        <span>Full Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="E-mail" id="E-mail" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea name="message" id="Message" required="required">
+
+                        </textarea>
+                        <span>Type your Message...</span>
+                    </div>
+
+
+                    <div class="inputBox">
+                        <input type="submit" onclick="sendMail(event)" value="Send">
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+        <a href="https://wa.me/+971509246913" class="float" target="_blank">
+            <i class="fa-brands fa-whatsapp fa-beat my-float"></i>
+        </a>
+
+
+
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a target="_blank" href="https://wa.me/+971509246913"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/hight_spirit_cleaning_company?igsh=NGJ2dDJ0MjJuaXF6"><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100063655804791&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2024 Hight spirits cleaning. All rights reserved</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

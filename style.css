@@ -1,0 +1,776 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 100vh;
+    background-color: #000;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/professional-cleaning-service-person-using-vacuum-cleaner-office-min.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding:0 2rem;
+
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+a:hover{
+    color: #00a7e1;
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin:  0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img{
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2em;
+}
+
+.navbar .toggle-btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.drop-down{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px; 
+    height: 0;
+    width: 300px;
+    background-color: #333;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.open{
+    height: 160px;
+    z-index: 1;
+}
+
+.drop-down li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sm-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 7px;
+}
+.sm-nav i{
+    font-size: 1.1rem;
+}
+
+
+.home-sec{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfectly centers both horizontally and vertically */
+    text-align: center;
+}
+
+.home-sec h1,
+.home-sec p{
+    color: whitesmoke;
+}
+
+.home-sec h1{
+    font-size: 39px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.3s ease;
+}
+
+
+
+@media(max-width:992px){
+    .navbar .logo a{
+        font-size: 0.90rem;
+    }
+    .navbar .links{
+        display: none;
+    }
+    .navbar .toggle-btn{
+        display: block;
+    }
+
+    .drop-down{
+        display: block;
+    }
+}
+
+@media(max-width:600px){
+    .drop-down{
+        left: 2rem;
+        width: unset;
+        max-width: 400px;
+    }
+}
+
+.home-text{
+
+    margin-top: 20px;
+}
+
+.home-btn{
+    display: inline-block;
+    background-color: #1446A0;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+.home-btn:hover{
+    cursor: pointer;
+    background-color: #00A7E1;
+    color: #fff;
+}
+
+
+
+
+
+/* KARKAR */
+
+/* About Us Banner */
+
+  
+.about-us-banner .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure full height for centering */
+}
+  
+.about-us-banner h1 {
+    color: #ffffff; /* White text for contrast */
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    font-weight: bold; /* Bold for better visibility */
+    text-transform: uppercase; /* Capitalize text */
+    line-height: 1.2; /* Improve readability */
+}
+  
+  /* About Us Section */
+.about-us-section {
+    padding: 80px 0;
+    background-color: #f7f7f7; /* Light gray background for section */
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+  
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px; /* Adjust as needed */
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+.about-text {
+    flex: 1;
+}
+  
+.about-text h2 {
+    color:#1446A0;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+  
+.about-text p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+  
+.about-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+  
+.about-text ul li {
+    margin-bottom: 15px;
+    color: #1446A0;
+}
+  
+.about-text a {
+    display: inline-block;
+    background-color: #1446A0;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+  
+.about-text a:hover {
+    background-color: #00A7E1;
+}
+  
+  /* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .container {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+    }
+  
+    .about-image {
+    margin-bottom: 30px;
+    }
+  
+    .about-image img {
+    width: 90%;
+    max-height: 600px; /* Smaller height for medium screens */
+    margin: 0 auto; /* Center align */
+    }
+  
+    .about-text {
+    padding: 0 10px;
+    }
+}
+  
+  @media screen and (max-width: 768px) {
+    .about-image img {
+    width: 100%;
+    max-height: 450px; /* Further restrict height */
+    }
+  
+    .about-text h2 {
+    font-size: 1.8em;
+    }
+  
+    .about-text p {
+    font-size: 1em;
+    }
+  
+    .about-text a {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    }
+}
+  
+  @media screen and (max-width: 480px) {
+    .about-image img {
+    width: 100%;
+    max-height: 300px; /* Ensure the image is even smaller on mobile */
+    }
+  
+    .about-text h2 {
+    font-size: 1.5em;
+    }
+  
+    .about-text p {
+    font-size: 0.9em;
+    }
+  
+    .about-text a {
+    padding: 10px 20px;
+    font-size: 1em;
+    }
+}
+
+
+
+.blk-text{
+    color: #000;
+}
+
+
+
+
+/* SERVICES SECTION BEGIN */
+
+#services {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1446A0; /* Matching your preferred color scheme */
+}
+
+#services p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Container for category cards */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between the cards */
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px; /* Adds left and right margins */
+}
+
+/* Style for the category cards */
+.service-card {
+    background-color: #34933a;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+}
+
+/* Hidden content section for each service category */
+.service-description {
+    display: none;
+    padding-top: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Header for each service category description */
+.service-description h4 {
+    font-size: 24px;
+    color: #1446A0;
+    margin-bottom: 20px;
+}
+
+/* Layout for the individual service cards under each category */
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style for the individual service cards in hidden content */
+.service-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    max-width: 100%;
+    min-height: 118px;
+    max-height: 118px; /* Ensure images are responsive */
+    /* height: auto; */
+}
+
+.service-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Animation and smooth transition when showing hidden content */
+.service-description {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.service-description.active {
+    display: block;
+    opacity: 1;
+}
+
+/* ---------- Responsive Design ---------- */
+
+/* For large screens (3 cards per row) */
+@media (min-width: 992px) {
+    .service-card {
+        width: calc(33.333% - 20px); /* 3 cards per row */
+    }
+}
+
+/* For medium screens (2 cards per row) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .service-card {
+        width: calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+/* For small screens (1 card per row) */
+@media (max-width: 767px) {
+    .service-card {
+        width: 100%; /* 1 card per row */
+    }
+    .categories {
+        padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+
+
+
+/* CONTACT US PAGE BEGIN */
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2a712f;
+    color: #fff;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contact .content p{
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top:30px ;
+}
+
+.contact-container .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .contact-info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.contact-container .contact-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    transition: 0.3s ease;
+}
+
+.contact-container .contact-info .box:hover .icon{
+    background: #00A7E1;
+    color: #fff;
+}
+
+
+.contact-container .contact-info .box .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 300;
+}
+
+.contact-container .contact-info .box .text h3{
+    font-weight: 500;
+    color: #00A7E1;
+}
+
+.contact-container .contact-info .txt{
+    color: #fff;
+    margin-top: 50px;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 50px solid #1446A0;
+    line-height: 1em;
+}
+
+.sci{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    color: #fff;
+    font-size: 2em;
+    transition: 0.5s;
+
+}
+
+.sci li a:hover{
+    color: #00A7E1;
+}
+
+.contact-container .contact-form{
+    position: relative;
+    width: 40%;
+    background:#fff ;
+    min-height: 100px;
+    padding: 60px;
+}
+
+.contact-container .contact-form h2{
+    font-size: 2em;
+    color: #000;
+    font-weight: 500;
+}
+
+.contact-container .contact-form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.contact-container .contact-form .inputBox input,
+.contact-container .contact-form .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline :none;
+    resize: none;
+}
+
+.contact-container .contact-form .inputBox span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #666;
+    transition: 0.5s;
+}
+
+.contact-container .contact-form .inputBox input:focus ~ span,
+.contact-container .contact-form .inputBox textarea:focus ~ span,
+.contact-container .contact-form .inputBox input:valid ~ span,
+.contact-container .contact-form .inputBox textarea:valid ~ span
+{
+
+    color: #00A7E1;
+    font-size: 0.9em;
+    transform: translateY(-20px);
+}
+
+.contact-container .contact-form .inputBox input[type="submit"]{
+    width: 100px;
+    background:#00A7E1 ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font: 1.1em ;
+    font-weight: 500;
+}
+
+@media(max-width:992px){
+    .contact{
+        padding: 50px;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-container .contact-info,
+    .contact-container .contact-form
+    {
+        width: 100%;
+    }
+    .contact-container .contact-form{
+        padding: 50px 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* CONTACT US END */
+
+/* Footer */
+
+footer{
+    background-color: #222;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: black;
+    transition: 0.5s ;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+
+@media(max-width:700px){
+    
+}
